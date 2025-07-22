@@ -59,15 +59,15 @@ const ToDoApp = () => {
                         <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
                             {/* Add Todo Section */}
                             <div className="p-8 border-b border-white/10">
-                                <div className="flex gap-4">
+                                <div className="flex gap-4 ">
                                     <input
                                         type="text"
                                         placeholder="Add a new task..."
-                                        className="flex-1 px-6 py-4 bg-white/90 backdrop-blur-sm border border-white/30 rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all text-gray-800 placeholder-gray-500 shadow-lg"
+                                        className="flex-1 px-2 px-md-5 py-5 bg-white/90 backdrop-blur-sm border border-white/30 rounded-2xl focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all text-gray-800 placeholder-gray-500 shadow-lg"
                                     />
-                                    <button className="px-8 py-4 bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-2xl hover:from-teal-600 hover:to-emerald-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-transparent transition-all shadow-lg flex items-center gap-3 font-medium">
-                                        <Plus size={20} />
-                                        Add Task
+                                    <button className="px-md-8 py-3 px-4 bg-gradient-to-r from-teal-500 to-emerald-500 text-white rounded-2xl hover:from-teal-600 hover:to-emerald-600 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-transparent transition-all shadow-lg flex items-center gap-3 font-medium">
+                                        <Plus size={18} className="hidden sm:inline-block" />
+                                        <span className="text-sm sm:text-base">Add Task</span>
                                     </button>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@ const ToDoApp = () => {
                                             className="w-full pl-12 pr-4 py-3 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent text-gray-800 placeholder-gray-500"
                                         />
                                     </div>
-                                    <div className="flex gap-3">
+                                    <div className="flex justify-content-center align-items-center gap-3">
                                         <button className="px-6 py-3 rounded-xl capitalize transition-all bg-gradient-to-r from-teal-500 to-emerald-500 text-white shadow-lg">
                                             All
                                         </button>
