@@ -1,6 +1,7 @@
 import React from 'react'
 import { Plus, Check, X, Edit3, Calendar, Filter, Search } from 'lucide-react';
-const ToDoApp = () => {
+const ToDoApp = async () => {
+    
     return (
         <>
             <div className="min-h-screen relative overflow-hidden">
